@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send WhatsApp message without saving contact number</title>
+    <link href='https://fonts.googleapis.com/css?family=Atma' rel='stylesheet'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <div class="card py-5 px-2" >
+            <h3 class="headline">Enter WhatsApp number</h3>
+            <form action="">
+                <div><select name="countryCode" id="countryCode">
+                    <option value="91">India</option>
+                </select><input placeholder="WhatsApp number" class="text-center" type="number" id="number" oninvalid="this.setCustomValidity('Please enter WhatsApp number')" oninput="setCustomValidity('')" required></div>
+                <div>
+                    <textarea class="p-3" id="msg" cols="30" rows="10" placeholder="Write your message here... Optional"></textarea>
+                </div>
+                <input class="btn btn-lg btn-success" type="submit" id="btn" value="Send">
+            </form>
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script/app.js"></script>
+</body>
+</html>
